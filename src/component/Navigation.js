@@ -1,21 +1,17 @@
 import React from "react";
+import Logo from "../assets/images/Logo.svg";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
     return (
-        <nav>
-            <img src="../../public/images/Logo.svg" alt="Little Lemon logo" />
-            <ul>
+        <nav className="navbar">
+            <img src={Logo} alt="Little Lemon logo" className="logo" />
+            <ul className="nav-items">
                 <li>
-                    <a href=""></a>
+                    <NavLink to={"/"}>Home</NavLink>
                 </li>
                 <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
+                    <NavLink to={"/booking"}>Booking</NavLink>
                 </li>
             </ul>
         </nav>
