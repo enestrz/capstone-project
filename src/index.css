@@ -57,7 +57,8 @@ a {
 .specials-content,
 .testimonials-content,
 .about-content,
-.footer-container {
+.footer-container,
+.form-booking {
     grid-column: 3 / 11;
 }
 
@@ -351,4 +352,35 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/* BOOKING FORM */
+.form-booking {
+    margin-top: 73px; /* Define later ! */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-item {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item input[type="submit"] {
+    all: unset;
+    text-align: center;
+    font-weight: 500;
+    height: 20px;
+    background-color: #f4ce14;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.form-item select {
 }
